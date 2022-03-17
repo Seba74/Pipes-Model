@@ -2,6 +2,9 @@
     margin: 20px;
     .no-comunes-title {
         margin-bottom: 20px;
+        @media screen and (max-width: 920px){
+            text-align: center;
+        }
     }
     .cards-container {
         display: grid;
@@ -19,10 +22,20 @@
                 }
             }
         }
-        @media screen and (max-width: 680px){
+        @media screen and (max-width: 920px){
             display: flex;
             flex-direction: column;
+            .slice {
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                p{
+                    padding: 10px 0;
+                    overflow-x: scroll;
+                }
+            }
         }
+
     }
 }
 

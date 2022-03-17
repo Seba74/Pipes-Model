@@ -4,6 +4,9 @@
 
 .basicos-title {
     margin-bottom: 20px;
+    @media screen and (max-width: 920px){
+        text-align: center;
+    }
 }
 .cards-container {
     display: flex;

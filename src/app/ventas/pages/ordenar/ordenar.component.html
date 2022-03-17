@@ -4,14 +4,16 @@
         <p>Pipes creados por {{name | mayusculas: esMayusculas}} </p>
     </div>
             <p-toolbar>
-                <div class="p-toolbar-group-left toolbar"> 
-                    <button pButton type="button" label="Cambiar a {{case}}" class="p-button-warning" (click)="cambiarMayus()" ></button>
-                </div>
-                <div class="p-toolbar-group-right toolbar">
-                    <button pButton type="button" icon="pi pi-sort" label="Por Nombre" class="p-button-raised " (click)="ordenarValor(data[0])"></button>
-                    <button pButton type="button" icon="pi pi-sort" label="Valores" class="p-button-success" (click)="ordenarValor(data[1])"></button>
-                    <button pButton type="button" icon="pi pi-sort" label="Por Color" class="p-button-danger" (click)="ordenarValor(data[2])"></button>
-                </div>
+                <div class="toolbars">
+                    <div class="p-toolbar-group-left toolbar"> 
+                        <button pButton type="button" label="Cambiar a {{case}}" class="p-button-warning" (click)="cambiarMayus()" ></button>
+                    </div>
+                    <div class="p-toolbar-group-right toolbar r-tool">
+                        <button pButton type="button" icon="pi pi-sort" label="Por Nombre" class="p-button-raised " (click)="ordenarValor(data[0])"></button>
+                        <button pButton type="button" icon="pi pi-sort" label="Valores" class="p-button-success" (click)="ordenarValor(data[1])"></button>
+                        <button pButton type="button" icon="pi pi-sort" label="Por Color" class="p-button-danger" (click)="ordenarValor(data[2])"></button>
+                    </div>
+            </div>
             </p-toolbar>
             <div class="table">
                 <p-table [value]="heroes | ordenar: ordenarPor">

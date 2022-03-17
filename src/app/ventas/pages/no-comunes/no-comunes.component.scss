@@ -1,0 +1,28 @@
+.no-comunes-container {
+    margin: 20px;
+    .no-comunes-title {
+        margin-bottom: 20px;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .card{
+            width: 90%;
+            height: auto;
+            p-fieldset{
+                ul{
+                    padding: 0;
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 680px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+

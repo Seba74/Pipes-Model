@@ -1,0 +1,22 @@
+.ordenar-container {
+    margin: 20px;
+    .ordenar-title {
+        margin-bottom: 20px;
+    }
+    p-toolbar{
+        .toolbar{
+            display: flex;
+            gap: 10px;
+        }
+        @media screen and (max-width: 680px){
+            .toolbar {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .table {
+        margin-top: 20px;
+    }
+}
+

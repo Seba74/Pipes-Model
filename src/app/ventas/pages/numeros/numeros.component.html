@@ -1,0 +1,31 @@
+<div class="numeros-container">
+    <div class="prime-bases numeros-title">
+        <h1>Decimal Pipes & Porcentaje</h1>
+        <p>Pipes incluídos en Angular - Usualmente en el Common Module</p>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <p-card 
+                header="Ventas Netas" subheader="del presente año" >
+                <i class="pi pi-dollar"></i>
+                {{numeroEntero | number}}
+            </p-card>
+        </div>
+        <div class="card">
+            <p-card 
+                header="Ventas Brutas" subheader="del presente año" >
+                {{numeroEntero | currency: 'COP': 'symbol-narrow'}}
+            </p-card>
+        </div>
+
+        <div class="card">
+            <p-card 
+                header="Ganancia Porcentual" subheader="del presente año" >
+                {{porcentaje | percent:'2.2-2'}}
+            </p-card>
+        </div>
+
+    </div>
+
+</div>
